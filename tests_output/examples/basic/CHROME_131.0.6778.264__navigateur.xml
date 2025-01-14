@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="2">
+            tests="1">
 
   <testsuite name="examples.basic.navigateur"
     errors="0" failures="0" hostname="" id="" package="basic" skipped="0"
-    tests="2" time="7.172" timestamp="">
+    tests="1" time="2.395" timestamp="">
   
-    <testcase name="should load the home page and check the header text - Chrome" classname="examples.basic.navigateur" time="1.661" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="should load the home page and check the header text - Firefox" classname="examples.basic.navigateur" time="1.924" assertions="3">
+    <testcase name="should load the home page and check the header text - Chrome" classname="examples.basic.navigateur" time="1.196" assertions="3">
 
     
 
