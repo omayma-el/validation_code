@@ -5,9 +5,9 @@
 
   <testsuite name="examples.basic.navigateur"
     errors="0" failures="0" hostname="" id="" package="basic" skipped="0"
-    tests="1" time="2.395" timestamp="">
+    tests="1" time="3.242" timestamp="">
   
-    <testcase name="should load the home page and check the header text - Chrome" classname="examples.basic.navigateur" time="1.196" assertions="3">
+    <testcase name="should load the home page and check the header text - Chrome" classname="examples.basic.navigateur" time="1.619" assertions="3">
 
     
 
