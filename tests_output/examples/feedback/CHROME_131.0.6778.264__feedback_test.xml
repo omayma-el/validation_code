@@ -1,11 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="0">
+            tests="3">
 
   <testsuite name="examples.feedback.feedback_test"
     errors="0" failures="0" hostname="" id="" package="feedback" skipped="0"
-    tests="0" time="0.003000" timestamp="">
+    tests="3" time="18.94" timestamp="">
+  
+    <testcase name="should load the feedback page and check the header text - Chrome" classname="examples.feedback.feedback_test" time="1.237" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should fill out the feedback form and submit - Chrome" classname="examples.feedback.feedback_test" time="4.565" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should display validation message when required fields are empty - Chrome" classname="examples.feedback.feedback_test" time="3.666" assertions="2">
+
+    
+
+    
+    </testcase>
   
 
   
