@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="2">
+            tests="4">
 
   <testsuite name="examples.contact.contact_test"
     errors="0" failures="0" hostname="" id="" package="contact" skipped="0"
-    tests="2" time="12.74" timestamp="">
+    tests="4" time="37.23" timestamp="">
   
-    <testcase name="should load the contact page and check the header text - Chrome" classname="examples.contact.contact_test" time="1.035" assertions="10">
+    <testcase name="should load the contact page and check the header text - Chrome" classname="examples.contact.contact_test" time="1.450" assertions="10">
 
     
 
@@ -30,7 +30,7 @@
     
     </testcase>
   
-    <testcase name="should fill out the contact form and submit - Chrome" classname="examples.contact.contact_test" time="5.333" assertions="8">
+    <testcase name="should fill out the contact form and submit - Chrome" classname="examples.contact.contact_test" time="6.063" assertions="8">
 
     
 
@@ -43,6 +43,20 @@
     
 
     
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should display error message when required fields are empty - Chrome" classname="examples.contact.contact_test" time="5.127" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should display validation message for invalid email - Chrome" classname="examples.contact.contact_test" time="5.972" assertions="2">
 
     
 

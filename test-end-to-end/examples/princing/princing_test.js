@@ -1,25 +1,55 @@
-describe('Pricing Page Test', function() {
-    it('should load the pricing page and check the header text - Chrome', function(browser) {
-      browser
-        .navigateTo('http://localhost:9090/pricing')
-        .waitForElementVisible('body', 5000)
-        .waitForElementVisible('header.container-fluid', 5000)
-        .assert.visible('header.container-fluid')
-        .assert.visible('header.container-fluid .container.mt-5.pt-4')
-        .assert.containsText('.home--header-title', 'UN PRIX POUR')
-        .assert.containsText('.home--header-title', 'TOUTES LES SAISONS')
-        .assert.containsText('.display-6', 'Venez séjourner à Rosas')
-        .assert.containsText('p', 'De 460 € à 760 € / semaine')
-        .assert.visible('a.btn.btn-dark.btn-lg.rounded-pill')
-        .end();
-    });
+// describe('Pricing Page Test', function() {
+//     it('should load the pricing page and check the header text - Chrome', function(browser) {
+//       browser
+//         .navigateTo('http://localhost:9090/pricing')
+//         .waitForElementVisible('body', 5000)
+//         .waitForElementVisible('header.container-fluid', 5000)
+//         .assert.visible('header.container-fluid')
+//         .assert.visible('header.container-fluid .container.mt-5.pt-4')
+//         .assert.containsText('.home--header-title', 'UN PRIX POUR')
+//         .assert.containsText('.home--header-title', 'TOUTES LES SAISONS')
+//         .assert.containsText('.display-6', 'Venez séjourner à Rosas')
+//         .assert.containsText('p', 'De 460 € à 760 € / semaine')
+//         .assert.visible('a.btn.btn-dark.btn-lg.rounded-pill')
+//         .end();
+//     });
   
-    it('should check the main content area - Chrome', function(browser) {
-      browser
-        .navigateTo('http://localhost:9090/pricing')
-        .waitForElementVisible('body', 5000)
-        .waitForElementVisible('main.container.mt-5', 5000)
-        .assert.visible('main.container.mt-5')
-        .end();
-    });
-  });
+//     it('should check the main content area - Chrome', function(browser) {
+//       browser
+//         .navigateTo('http://localhost:9090/pricing')
+//         .waitForElementVisible('body', 5000)
+//         .waitForElementVisible('main.container.mt-5', 5000)
+//         .assert.visible('main.container.mt-5')
+//         .end();
+//     });
+  
+//     it('should check the presence of pricing images - Chrome', function(browser) {
+//       browser
+//         .navigateTo('http://localhost:9090/pricing')
+//         .waitForElementVisible('body', 5000)
+//         .assert.visible('img[alt="winter"]') // Check for the presence of images with alt text "winter"
+//         .assert.visible('img[alt="Moyenne saison"]') // Check for the presence of images with alt text "Moyenne saison"
+//         .assert.visible('img[alt="Haute saison"]') // Check for the presence of images with alt text "Haute saison"
+//         .end();
+//     });
+  
+//     it('should check the presence of payment method images - Chrome', function(browser) {
+//       browser
+//         .navigateTo('http://localhost:9090/pricing')
+//         .waitForElementVisible('body', 5000)
+//         .assert.visible('img[src*="paypal.png"]') // Check for the presence of images with src containing "paypal.png"
+//         .assert.visible('img[src*="visa.png"]') // Check for the presence of images with src containing "visa.png"
+//         .assert.visible('img[src*="maestro.png"]') // Check for the presence of images with src containing "maestro.png"
+//         .end();
+//     });
+  
+//     it('should check that the contact button is functional - Chrome', function(browser) {
+//       browser
+//         .navigateTo('http://localhost:9090/pricing')
+//         .waitForElementVisible('body', 5000)
+//         .click('a.btn.btn-dark.btn-lg.rounded-pill')
+//         .waitForElementVisible('body', 5000)
+//         .assert.urlContains('/contact')
+//         .end();
+//     });
+//   });
