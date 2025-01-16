@@ -1,4 +1,4 @@
-/* describe('Contact Page Test', function() {
+describe('Contact Page Test', function() {
   it('should load the contact page and check the header text - Chrome', function(browser) {
     browser
       .navigateTo('http://localhost:9090/contact')
@@ -78,4 +78,4 @@
       .assert.attributeContains('input[name="email"]', 'validationMessage', "Please include an '@' in the email address. 'invalid-email' is missing an '@'.")
       .end();
   });
-}); */
+});

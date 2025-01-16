@@ -18,6 +18,7 @@ describe('Feedback Page Test', function() {
         .setValue('input[name="name"]', 'Pierre')
         .setValue('textarea[name="message"]', 'This is a feedback message.')
         .pause(1000)
+        .moveToElement('button[type="submit"]', 0, 0)
         .execute(function() {
             window.scrollTo(0, document.body.scrollHeight);
           })
@@ -35,6 +36,7 @@ describe('Feedback Page Test', function() {
         .navigateTo('http://localhost:9090/feedback')
         .waitForElementVisible('body', 1000)
         .pause(1000)
+        .moveToElement('button[type="submit"]', 0, 0)
         .execute(function() {
             document.querySelector('button[type="submit"]').scrollIntoView();
         })
