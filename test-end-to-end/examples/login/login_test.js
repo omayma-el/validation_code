@@ -41,4 +41,32 @@ describe('Login Page Test', function() {
       .assert.value('//form//input[@name="password"]', 'invalidPassword')
       .end();
     });
+
+    it('should stay on the login page and show validation message when username is empty', function(browser) {
+      browser
+        .windowMaximize()
+        .navigateTo(loginUrl)
+        .useXpath()
+        .setValue('//form//input[@name="password"]', 'Vernet')
+        .click('//form//button[@type="submit" and contains(@class, "btn btn-primary")]')
+        .pause(1000)
+        .assert.urlContains('/login')
+        .assert.value('//form//input[@name="password"]', 'Vernet')
+        .assert.attributeContains('//form//input[@name="name"]', 'validationMessage', 'Please fill out this field.')
+        .end();
+    });
+  
+    it('should stay on the login page and show validation message when password is empty', function(browser) {
+      browser
+        .windowMaximize()
+        .navigateTo(loginUrl)
+        .useXpath()
+        .setValue('//form//input[@name="name"]', 'Soizic')
+        .click('//form//button[@type="submit" and contains(@class, "btn btn-primary")]')
+        .pause(1000)
+        .assert.urlContains('/login')
+        .assert.value('//form//input[@name="name"]', 'Soizic')
+        .assert.attributeContains('//form//input[@name="password"]', 'validationMessage', 'Please fill out this field.')
+        .end();
+    });
   });
