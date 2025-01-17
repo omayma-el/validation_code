@@ -1,11 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="0">
+            tests="4">
 
   <testsuite name="examples.admin.admin_test"
     errors="0" failures="0" hostname="" id="" package="admin" skipped="0"
-    tests="0" time="0.002000" timestamp="">
+    tests="4" time="19.48" timestamp="">
+  
+    <testcase name="should load the admin page and check the main container" classname="examples.admin.admin_test" time="2.495" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should check the presence of the main content area" classname="examples.admin.admin_test" time="2.390" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should check the presence of the admin panel elements" classname="examples.admin.admin_test" time="2.411" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should check the functionality of the &#34;Disconnect&#34; button" classname="examples.admin.admin_test" time="2.442" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
   
 
   
