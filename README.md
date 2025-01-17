@@ -389,3 +389,81 @@ Image for winter.
 - Case 7: Verify that the username field retains the entered value.  
 - Case 8: Verify that the password field shows a validation message:  
     - "Please fill out this field."  
+
+## Pricing page
+
+### Scenario 1: Should load the pricing page and check the header text
+
+- Case 1: Navigate to the pricing page (`http://localhost:9090/pricing`).  
+- Case 2: Verify that the body of the page is visible.  
+- Case 3: Check the presence and content of the header text:  
+    - `"UN PRIX POUR"`  
+    - `"TOUTES LES SAISONS"`  
+    - `"Venez séjourner à Rosas"`  
+    - `"De 460 € à 760 € / semaine"`  
+- Case 4: Verify the visibility of the call-to-action button (`a.btn.btn-dark.btn-lg.rounded-pill`).  
+
+---
+
+### Scenario 2: Should check the main content area
+
+- Case 1: Navigate to the pricing page (`http://localhost:9090/pricing`).  
+- Case 2: Verify the presence of the main content container (`main.container.mt-5`).  
+- Case 3: Check the presence of the following sections:  
+    - Pricing information (`#tarifs-pricing`)  
+    - Pricing conditions (`#tarifs-conditions`)  
+    - Pricing services (`#tarifs-services`)  
+
+---
+
+### Scenario 3: Should verify pricing sections and text
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the pricing page (`http://localhost:9090/pricing`).  
+- Case 3: Verify the visibility of the pricing cards:  
+    - Card 1: `"Basse saison"`  
+    - Card 2: `"Moyenne saison"`  
+    - Card 3: `"Haute saison"`  
+
+---
+
+### Scenario 4: Should check the presence of pricing images
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the pricing page (`http://localhost:9090/pricing`).  
+- Case 3: Verify the presence of images in the pricing cards:  
+    - Card 1: Image 1  
+    - Card 2: Image 2  
+    - Card 3: Image 3  
+
+---
+
+### Scenario 5: Should check the presence of payment method images (Chrome)
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the pricing page (`http://localhost:9090/pricing`).  
+- Case 3: Verify the presence of payment method icons:  
+    - Icon 1: `/html/body/main/section[3]/div/div[2]/div/button/img`  
+    - Icon 2: `/html/body/main/section[3]/div/div[4]/button/img`  
+    - Icon 3: `/html/body/main/section[3]/div/div[6]/button/img`  
+
+---
+
+### Scenario 6: Should check that the contact button is functional (Chrome)
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the pricing page (`http://localhost:9090/pricing`).  
+- Case 3: Click the contact button (`/html/body/header/div[2]/div/div[2]/div/div/a`).  
+- Case 4: Verify that the page navigates to the `/contact` page.  
+
+---
+
+### Scenario 7: Should check that the 3 contact buttons are functional (Chrome)
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the pricing page (`http://localhost:9090/pricing`).  
+- Case 3: Scroll and click each of the following contact buttons:  
+    - Button 1: Located in section `#tarifs-pricing`.  
+    - Button 2: Located in section `/html/body/main/section[1]/div/div[2]/div/div/div[2]/a`.  
+    - Button 3: Located in section `/html/body/main/section[1]/div/div[1]/div/div/div[2]/a`.  
+- Case 4: After clicking each button, verify the page navigates to the `/contact` page.
