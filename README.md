@@ -182,3 +182,43 @@ Haute saison: 760 € / semaine.
   "Please include an '@' in the email address. 'invalid-email' is missing an '@'."  
 
 ---
+
+## Feedback page
+
+### Scenario 1: Should load the feedback page and check the header text
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the feedback page (`http://localhost:9090/feedback`).  
+- Case 3: Wait for the page to load completely.  
+- Case 4: Verify that the header container is visible.  
+- Case 5: Verify that the feedback form is visible.  
+- Case 6: Verify that the following form fields are visible:  
+  - Name  
+  - Message  
+- Case 7: Verify that the submit button is visible.  
+
+---
+
+### Scenario 2: Should fill out the feedback form and submit and check the message existence on the page
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the feedback page (`http://localhost:9090/feedback`).  
+- Case 3: Wait for the page to load completely.  
+- Case 4: Fill out the form with the following details:  
+  - Name: Pierre  
+  - Message: "This is a feedback message."  
+- Case 5: Scroll to the submit button and click it.  
+- Case 6: Verify the page URL contains `/feedback`.  
+- Case 7: Verify that the form fields are cleared after submission.  
+- Case 8: Verify that the feedback message appears on the page, containing the text "This is a feedback message." and "Pierre".  
+
+---
+
+### Scenario 3: Should display validation message when required fields are empty
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the feedback page (`http://localhost:9090/feedback`).  
+- Case 3: Wait for the page to load completely.  
+- Case 4: Scroll to the submit button and click it without filling in the required fields.  
+- Case 5: Verify that an error message is displayed for the `Name` field:  
+  "Please fill out this field."

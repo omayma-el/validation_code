@@ -1,5 +1,5 @@
 describe('Feedback Page Test', function() {
-    it('should load the feedback page and check the header text - Chrome', function(browser) {
+    it('should load the feedback page and check the header text', function(browser) {
       browser
         .navigateTo('http://localhost:9090/feedback')
         .waitForElementVisible('body', 1000)
@@ -11,7 +11,7 @@ describe('Feedback Page Test', function() {
         .end();
     });
   
-    it('should fill out the feedback form and submit and check the message existance on the page - Chrome', function(browser) {
+    it('should fill out the feedback form and submit and check the message existance on the page', function(browser) {
       browser
         .navigateTo('http://localhost:9090/feedback')
         .waitForElementVisible('body', 1000)
@@ -31,7 +31,7 @@ describe('Feedback Page Test', function() {
         .end();
     });
   
-    it('should display validation message when required fields are empty - Chrome', function(browser) {
+    it('should display validation message when required fields are empty', function(browser) {
       browser
         .navigateTo('http://localhost:9090/feedback')
         .waitForElementVisible('body', 1000)
