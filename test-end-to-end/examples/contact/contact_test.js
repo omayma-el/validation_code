@@ -1,5 +1,5 @@
 describe('Contact Page Test', function() {
-  it('should load the contact page and check the header text - Chrome', function(browser) {
+  it('should load the contact page and check the header text', function(browser) {
     browser
       .navigateTo('http://localhost:9090/contact')
       .waitForElementVisible('body', 1000)
@@ -15,7 +15,7 @@ describe('Contact Page Test', function() {
       .end();
   });
 
-  it('should fill out the contact form and submit - Chrome', function(browser) {
+  it('should fill out the contact form and submit', function(browser) {
     browser
       .navigateTo('http://localhost:9090/contact')
       .waitForElementVisible('body', 1000)
@@ -42,7 +42,7 @@ describe('Contact Page Test', function() {
       .end();
   });
 
-  it('should display error message when required fields are empty - Chrome', function(browser) {
+  it('should display error message when required fields are empty', function(browser) {
     browser
       .navigateTo('http://localhost:9090/contact')
       .waitForElementVisible('body', 1000)
@@ -58,7 +58,7 @@ describe('Contact Page Test', function() {
       .end();
   });
 
-  it('should display validation message for invalid email - Chrome', function(browser) {
+  it('should display validation message for invalid email', function(browser) {
     browser
       .navigateTo('http://localhost:9090/contact')
       .waitForElementVisible('body', 1000)

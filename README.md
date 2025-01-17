@@ -110,3 +110,75 @@ Haute saison: 760 € / semaine.
 - Case 8: Navigate back to the home page.  
 - Case 9: Verify the presence of the "Avis" button.  
 - Case 10: Click the "Avis" button and verify redirection to the `/feedback` page.  
+
+## Contact page
+
+### Scenario 1: Should load the contact page and check the header text
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the contact page (`http://localhost:9090/contact`).  
+- Case 3: Wait for the page to load completely.  
+- Case 4: Verify that the header container is visible.  
+- Case 5: Verify that the header title contains the text "CONTACTEZ-NOUS".  
+- Case 6: Verify that the subtitle contains the text "remplissez le formulaire".  
+- Case 7: Verify that the form is visible.  
+- Case 8: Verify that the following form fields are visible:  
+  First Name  
+  Last Name  
+  Mobile Phone  
+  Arrival Date  
+  Departure Date  
+
+---
+
+### Scenario 2: Should fill out the contact form and submit
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the contact page (`http://localhost:9090/contact`).  
+- Case 3: Wait for the page to load completely.  
+- Case 4: Fill out the form with the following details:  
+  - First Name: Jean  
+  - Last Name: Louis  
+  - Email: jean.louis@example.com  
+  - Mobile Phone: 0610203040  
+  - Arrival Date: 12-01-2023  
+  - Departure Date: 12-10-2023  
+  - Message: "This is a test message."  
+- Case 5: Scroll to the submit button and click it.  
+- Case 6: Verify the page URL contains `/contact`.  
+- Case 7: Verify that all form fields are cleared after submission.  
+
+---
+
+### Scenario 3: Should display error message when required fields are empty
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the contact page (`http://localhost:9090/contact`).  
+- Case 3: Wait for the page to load completely.  
+- Case 4: Fill out the following fields:  
+  - First Name: Julie  
+  - Last Name: Moulin  
+- Case 5: Scroll to the submit button and click it.  
+- Case 6: Verify that an error message is displayed for the required `Mobile Phone` field:  
+  "Please fill out this field."  
+
+---
+
+### Scenario 4: Should display validation message for invalid email
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the contact page (`http://localhost:9090/contact`).  
+- Case 3: Wait for the page to load completely.  
+- Case 4: Fill out the form with the following details:  
+  - First Name: Jacques  
+  - Last Name: Brel  
+  - Email: invalid-email  
+  - Mobile Phone: 0610203040  
+  - Arrival Date: 12-01-2023  
+  - Departure Date: 12-10-2023  
+  - Message: "This is a test message."  
+- Case 5: Scroll to the submit button and click it.  
+- Case 6: Verify that the error message for the `Email` field is displayed:  
+  "Please include an '@' in the email address. 'invalid-email' is missing an '@'."  
+
+---
