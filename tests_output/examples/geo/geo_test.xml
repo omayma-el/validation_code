@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="0">
+
+  <testsuite name="examples.geo.geo_test"
+    errors="0" failures="0" hostname="" id="" package="geo" skipped="4"
+    tests="0" time="0" timestamp="">
+  
+
+  
+
+    
+
+  
+    
+    <testcase
+      name="should load the geo page and check the header text" classname="examples.geo.geo_test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="should check the main content area" classname="examples.geo.geo_test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="should check the presence of the contact button and its functionality" classname="examples.geo.geo_test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="should check the main content area" classname="examples.geo.geo_test">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

@@ -4,6 +4,7 @@ describe('Pricing Page Test', function() {
     it('should load the pricing page and check the header text', function(browser) {
       browser
         .navigateTo(pricingUrl)
+        .useCss()
         .waitForElementVisible('body', 10000)
         .assert.containsText('.home--header-title', 'UN PRIX POUR')
         .assert.containsText('.home--header-title', 'TOUTES LES SAISONS')
@@ -16,6 +17,7 @@ describe('Pricing Page Test', function() {
     it('should check the main content area', function(browser) {
       browser
         .navigateTo(pricingUrl)
+        .useCss()
         .waitForElementVisible('main.container.mt-5', 10000)
         .assert.visible('main.container.mt-5')
         .assert.visible('#tarifs-pricing')
@@ -28,8 +30,10 @@ describe('Pricing Page Test', function() {
         browser
           .windowMaximize()
           .navigateTo(pricingUrl)
+          .useCss()
           .waitForElementVisible('body', 5000)
           .waitForElementVisible('.card:nth-of-type(1)', 10000)
+          .useXpath()
           .assert.containsText('.card:nth-of-type(1) .card-title.h4.text-center', 'Basse saison')
           .useXpath()
           .assert.containsText('/html/body/main/section[1]/div/div[2]/div/div/h5', 'Moyenne saison')

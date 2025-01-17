@@ -1,11 +1,128 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="0">
+            tests="9">
 
   <testsuite name="examples.geo.geo_test"
     errors="0" failures="0" hostname="" id="" package="geo" skipped="0"
-    tests="0" time="0.001000" timestamp="">
+    tests="9" time="38.05" timestamp="">
+  
+    <testcase name="should load the geo page and check the header text" classname="examples.geo.geo_test" time="1.858" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should check the main content area" classname="examples.geo.geo_test" time="2.125" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should check the presence of the contact button and its functionality" classname="examples.geo.geo_test" time="2.100" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should check the presence of the &#34;Voiture&#34; section and its content" classname="examples.geo.geo_test" time="2.124" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should check the presence of the &#34;Avion&#34; section and its content" classname="examples.geo.geo_test" time="1.821" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should check the presence of the &#34;Train&#34; section and its content" classname="examples.geo.geo_test" time="1.826" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should check the presence of the &#34;Nos meilleures adresses&#34; section and its content" classname="examples.geo.geo_test" time="2.276" assertions="9">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should check the presence of the &#34;A proximité&#34; section and its content" classname="examples.geo.geo_test" time="2.798" assertions="7">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should check the presence of the map and its functionality" classname="examples.geo.geo_test" time="2.091" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
   
 
   
