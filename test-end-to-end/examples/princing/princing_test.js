@@ -34,7 +34,7 @@ describe('Pricing Page Test', function() {
           .waitForElementVisible('body', 5000)
           .waitForElementVisible('.card:nth-of-type(1)', 10000)
           .useXpath()
-          .assert.containsText('.card:nth-of-type(1) .card-title.h4.text-center', 'Basse saison')
+          .assert.containsText('/html/body/main/section[1]/div/div[1]/div/div/h5', 'Basse saison')
           .useXpath()
           .assert.containsText('/html/body/main/section[1]/div/div[2]/div/div/h5', 'Moyenne saison')
           .useXpath()
@@ -78,24 +78,30 @@ describe('Pricing Page Test', function() {
       browser
         .windowMaximize()
         .navigateTo(pricingUrl)
-        .useXpath()
+        .useCss()
         .execute(function() {
-          document.evaluate('//*[@id="tarifs-conditions"]/div[1]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.scrollIntoView(({ behavior: 'auto' }));
+          document.evaluate('//*[@id="tarifs-pricing"]/div/div[1]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.scrollIntoView(({ behavior: 'auto' }));
         })
+        .pause(5000)
+        .useXpath()
         .click('//*[@id="tarifs-pricing"]/div/div[1]/div/div/div[2]/a')
         .assert.urlContains('/contact')
         .navigateTo(pricingUrl)
-        .useXpath()
+        .useCss()
         .execute(function() {
-          document.evaluate('/html/body/main/section[1]/div/div[2]/div/div/div[2]/a', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.scrollIntoView(({ behavior: 'auto' }));
+          document.evaluate('/html/body/main/section[1]/div', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.scrollIntoView(({ behavior: 'auto' }));
         })
+        .pause(5000)
+        .useXpath()
         .click('/html/body/main/section[1]/div/div[2]/div/div/div[2]/a')
         .assert.urlContains('/contact')
         .navigateTo(pricingUrl)
-        .useXpath()
+        .useCss()
         .execute(function() {
-          document.evaluate('/html/body/main/section[1]/div/div[1]/div/div/div[2]/a', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.scrollIntoView(({ behavior: 'auto' }));
+          document.evaluate('/html/body/main/section[1]/div', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.scrollIntoView(({ behavior: 'auto' }));
         })
+        .pause(5000)
+        .useXpath()
         .click('/html/body/main/section[1]/div/div[1]/div/div/div[2]/a')
         .assert.urlContains('/contact')
         .end();

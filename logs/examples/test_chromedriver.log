@@ -1,0 +1,961 @@
+Starting ChromeDriver 131.0.6778.264 (2d05e31515360f4da764174f7c448b33e36da871-refs/branch-heads/6778@{#4323}) on port 9515
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 9515.
+[1737110597.077][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+         }
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1737110597.077][INFO]: Browser search. Trying... /home/omayma/chatbot_project/node_modules/chromedriver/lib/chromedriver/chrome
+[1737110597.077][INFO]: Browser search. Trying... /home/omayma/chatbot_project/node_modules/chromedriver/lib/chromedriver/chrome
+[1737110597.077][INFO]: Browser search. Trying... /home/omayma/chatbot_project/node_modules/chromedriver/lib/chromedriver/google-chrome
+[1737110597.077][INFO]: Browser search. Trying... /home/omayma/chatbot_project/node_modules/chromedriver/lib/chromedriver/chromium
+[1737110597.077][INFO]: Browser search. Trying... /home/omayma/chatbot_project/node_modules/chromedriver/lib/chromedriver/chromium-browser
+[1737110597.077][INFO]: Browser search. Trying... /usr/local/sbin/chrome
+[1737110597.077][INFO]: Browser search. Trying... /usr/local/bin/chrome
+[1737110597.077][INFO]: Browser search. Trying... /usr/sbin/chrome
+[1737110597.077][INFO]: Browser search. Trying... /usr/bin/chrome
+[1737110597.077][INFO]: Browser search. Trying... /sbin/chrome
+[1737110597.077][INFO]: Browser search. Trying... /bin/chrome
+[1737110597.078][INFO]: Browser search. Trying... /opt/google/chrome/chrome
+[1737110597.078][INFO]: Browser search. Found at  /opt/google/chrome/chrome
+[1737110597.078][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1737110597.078][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1737110597.078][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1737110597.078][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1737110597.078][INFO]: Launching chrome: /opt/google/chrome/chrome --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging=stderr --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/tmp/.org.chromium.Chromium.iBRL8p data:,
+[0117/114317.108764:WARNING:chrome_main_linux.cc(80)] Read channel stable from /opt/google/chrome/CHROME_VERSION_EXTRA
+[44284:44284:0117/114317.109892:WARNING:chrome_main_delegate.cc(672)] This is Chrome version 131.0.6778.264 (not a warning)
+[44284:44284:0117/114317.294224:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+
+DevTools listening on ws://127.0.0.1:40059/devtools/browser/17c885de-769d-4195-80fa-3c9ca12dc2c8
+[1737110597.373][DEBUG]: DevTools HTTP Request: http://localhost:40059/json/version
+[44325:44325:0117/114317.476780:WARNING:sandbox_linux.cc(430)] InitializeSandbox() called with multiple threads in process gpu-process.
+[44325:44325:0117/114317.478318:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1737110597.608][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Chrome/131.0.6778.264",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+   "V8-Version": "13.1.201.22",
+   "WebKit-Version": "537.36 (@2d05e31515360f4da764174f7c448b33e36da871)",
+   "webSocketDebuggerUrl": "ws://localhost:40059/devtools/browser/17c885de-769d-4195-80fa-3c9ca12dc2c8"
+}
+
+[1737110597.608][DEBUG]: DevTools HTTP Request: http://localhost:40059/json/list
+[1737110597.628][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:40059/devtools/page/F0D7B67E75B9783A73A61EB0E0894AEA",
+   "id": "F0D7B67E75B9783A73A61EB0E0894AEA",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:40059/devtools/page/F0D7B67E75B9783A73A61EB0E0894AEA"
+} ]
+
+[1737110597.628][INFO]: resolved localhost to ["127.0.0.1"]
+[44284:44284:0117/114317.632482:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.ScreenSaver.GetActive: object_path= /org/freedesktop/ScreenSaver: org.freedesktop.DBus.Error.NotSupported: This method is not part of the idle inhibition specification: https://specifications.freedesktop.org/idle-inhibit-spec/latest/
+[1737110597.635][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1737110597.637][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "5C398941252BD7C069E2F0283952CE2C",
+      "canAccessOpener": false,
+      "targetId": "F0D7B67E75B9783A73A61EB0E0894AEA",
+      "title": "",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1737110597.637][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "F0D7B67E75B9783A73A61EB0E0894AEA"
+}
+[1737110597.652][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "763F4C929A1407075C1C1827626AC4D0",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "5C398941252BD7C069E2F0283952CE2C",
+      "canAccessOpener": false,
+      "targetId": "F0D7B67E75B9783A73A61EB0E0894AEA",
+      "title": "",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1737110597.652][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "763F4C929A1407075C1C1827626AC4D0"
+}
+[1737110597.653][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+}
+[1737110597.653][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1737110597.653][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1737110597.653][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+}
+[1737110597.653][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1737110597.662][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+}
+[1737110597.662][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "identifier": "1"
+}
+[1737110597.663][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1737110597.663][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+}
+[1737110597.663][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+}
+[1737110597.663][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+}
+[1737110597.665][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "timestamp": 11607.203167
+}
+[1737110597.665][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "timestamp": 11607.203829
+}
+[1737110597.680][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "frameId": "F0D7B67E75B9783A73A61EB0E0894AEA"
+}
+[1737110597.680][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "context": {
+      "auxData": {
+         "frameId": "F0D7B67E75B9783A73A61EB0E0894AEA",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "6689832715482846378.-2082233105515084017"
+   }
+}
+[1737110597.680][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+}
+[1737110597.680][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+}
+[1737110597.686][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+}
+[1737110597.686][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "131.0.6778.264",
+      "chrome": {
+         "chromedriverVersion": "131.0.6778.264 (2d05e31515360f4da764174f7c448b33e36da871-refs/branch-heads/6778@{#4323})",
+         "userDataDir": "/tmp/.org.chromium.Chromium.iBRL8p"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:40059"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "linux",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "44e52e4ca71a868753fe2f50b61e95c7"
+}
+[1737110597.709][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND Navigate {
+   "url": "http://127.0.0.1:9090/pricing"
+}
+[1737110597.709][INFO]: Waiting for pending navigations...
+[1737110597.709][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "expression": "1"
+}
+[1737110597.710][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1737110597.710][INFO]: Done waiting for pending navigations. Status: ok
+[1737110597.710][DEBUG]: DevTools WebSocket Command: Page.navigate (id=11) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "url": "http://127.0.0.1:9090/pricing"
+}
+[1737110597.716][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "frameId": "F0D7B67E75B9783A73A61EB0E0894AEA"
+}
+[1737110597.725][DEBUG]: DevTools WebSocket Response: Page.navigate (id=11) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "frameId": "F0D7B67E75B9783A73A61EB0E0894AEA",
+   "loaderId": "56E4CBC4F87A9264FAECCCE8B26AC13C"
+}
+[1737110597.725][INFO]: Waiting for pending navigations...
+[1737110597.725][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=12) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "expression": "1"
+}
+[1737110597.728][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+}
+[1737110597.731][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+}
+[1737110597.732][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "F0D7B67E75B9783A73A61EB0E0894AEA",
+      "loaderId": "56E4CBC4F87A9264FAECCCE8B26AC13C",
+      "mimeType": "text/html",
+      "secureContextType": "SecureLocalhost",
+      "securityOrigin": "http://127.0.0.1:9090",
+      "url": "http://127.0.0.1:9090/pricing"
+   },
+   "type": "Navigation"
+}
+[1737110597.758][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "context": {
+      "auxData": {
+         "frameId": "F0D7B67E75B9783A73A61EB0E0894AEA",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "http://127.0.0.1:9090",
+      "uniqueId": "7422830917227925043.-7714597298698967518"
+   }
+}
+[1737110597.767][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=12) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[44284:44284:0117/114318.010727:INFO:CONSOLE(31)] "[object Object] [object Object] [object Object] [object Object] [object Object] [object Object] [object Object]", source: webpack://@so-xzen/chat-bot-io-v2/./src/index.js? (31)
+[1737110598.012][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "args": [ {
+      "className": "Route",
+      "description": "Route",
+      "objectId": "-4957062407277573285.1.1",
+      "preview": {
+         "description": "Route",
+         "overflow": false,
+         "properties": [ {
+            "name": "route",
+            "type": "string",
+            "value": "/contact"
+         }, {
+            "name": "Page",
+            "type": "function",
+            "value": ""
+         }, {
+            "name": "body",
+            "subtype": "node",
+            "type": "object",
+            "value": "body"
+         }, {
+            "name": "priv",
+            "type": "boolean",
+            "value": "true"
+         } ],
+         "type": "object"
+      },
+      "type": "object"
+   }, {
+      "className": "Route",
+      "description": "Route",
+      "objectId": "-4957062407277573285.1.2",
+      "preview": {
+         "description": "Route",
+         "overflow": false,
+         "properties": [ {
+            "name": "route",
+            "type": "string",
+            "value": "/"
+         }, {
+            "name": "Page",
+            "type": "function",
+            "value": ""
+         }, {
+            "name": "body",
+            "subtype": "node",
+            "type": "object",
+            "value": "body"
+         }, {
+            "name": "priv",
+            "type": "boolean",
+            "value": "true"
+         } ],
+         "type": "object"
+      },
+      "type": "object"
+   }, {
+      "className": "Route",
+      "description": "Route",
+      "objectId": "-4957062407277573285.1.3",
+      "preview": {
+         "description": "Route",
+         "overflow": false,
+         "properties": [ {
+            "name": "route",
+            "type": "string",
+            "value": "/pricing"
+         }, {
+            "name": "Page",
+            "type": "function",
+            "value": ""
+         }, {
+            "name": "body",
+            "subtype": "node",
+            "type": "object",
+            "value": "body"
+         }, {
+            "name": "priv",
+            "type": "boolean",
+            "value": "true"
+         } ],
+         "type": "object"
+      },
+      "type": "object"
+   }, {
+      "className": "Route",
+      "description": "Route",
+      "objectId": "-4957062407277573285.1.4",
+      "preview": {
+         "description": "Route",
+         "overflow": false,
+         "properties": [ {
+            "name": "route",
+            "type": "string",
+            "value": "/geo"
+         }, {
+            "name": "Page",
+            "type": "function",
+            "value": ""
+         }, {
+            "name": "body",
+            "subtype": "node",
+            "type": "object",
+            "value": "body"
+         }, {
+            "name": "priv",
+            "type": "boolean",
+            "value": "true"
+         } ],
+         "type": "object"
+      },
+      "type": "object"
+   }, {
+      "className": "Route",
+      "description": "Route",
+      "objectId": "-4957062407277573285.1.5",
+      "preview": {
+         "description": "Route",
+         "overflow": false,
+         "properties": [ {
+            "name": "route",
+            "type": "string",
+            "value": "/feedback"
+         }, {
+            "name": "Page",
+            "type": "function",
+            "value": ""
+         }, {
+            "name": "body",
+            "subtype": "node",
+            "type": "object",
+            "value": "body"
+         }, {
+            "name": "priv",
+            "type": "boolean",
+            "value": "true"
+         } ],
+         "type": "object"
+      },
+      "type": "object"
+   }, {
+      "className": "Route",
+      "description": "Route",
+      "objectId": "-4957062407277573285.1.6",
+      "preview": {
+         "description": "Route",
+         "overflow": false,
+         "properties": [ {
+            "name": "route",
+            "type": "string",
+            "value": "/admin"
+         }, {
+            "name": "Page",
+            "type": "function",
+            "value": ""
+         }, {
+            "name": "body",
+            "subtype": "node",
+            "type": "object",
+            "value": "body"
+         }, {
+            "name": "priv",
+            "type": "boolean",
+            "value": "false"
+         } ],
+         "type": "object"
+      },
+      "type": "object"
+   }, {
+      "className": "Route",
+      "description": "Route",
+      "objectId": "-4957062407277573285.1.7",
+      "preview": {
+         "description": "Route",
+         "overflow": false,
+         "properties": [ {
+            "name": "route",
+            "type": "string",
+            "value": "/login"
+         }, {
+            "name": "Page",
+            "type": "function",
+            "value": ""
+         }, {
+            "name": "body",
+            "subtype": "node",
+            "type": "object",
+            "value": "body"
+         }, {
+            "name": "priv",
+            "type": "boolean",
+            "value": "true"
+         } ],
+         "type": "object"
+      },
+      "type": "object"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 8,
+         "functionName": "eval",
+         "lineNumber": 30,
+         "scriptId": "34",
+         "url": "webpack://@so-xzen/chat-bot-io-v2/./src/index.js?"
+      }, {
+         "columnNumber": 0,
+         "functionName": "./src/index.js",
+         "lineNumber": 51,
+         "scriptId": "6",
+         "url": "http://127.0.0.1:9090/src/main.db0b5fc3102d6eac0904.js?db0b5fc3102d6eac0904"
+      }, {
+         "columnNumber": 31,
+         "functionName": "__webpack_require__",
+         "lineNumber": 1129,
+         "scriptId": "6",
+         "url": "http://127.0.0.1:9090/src/main.db0b5fc3102d6eac0904.js?db0b5fc3102d6eac0904"
+      }, {
+         "columnNumber": 36,
+         "functionName": "",
+         "lineNumber": 2200,
+         "scriptId": "6",
+         "url": "http://127.0.0.1:9090/src/main.db0b5fc3102d6eac0904.js?db0b5fc3102d6eac0904"
+      }, {
+         "columnNumber": 11,
+         "functionName": "",
+         "lineNumber": 2202,
+         "scriptId": "6",
+         "url": "http://127.0.0.1:9090/src/main.db0b5fc3102d6eac0904.js?db0b5fc3102d6eac0904"
+      } ]
+   },
+   "timestamp": 1.737110598010285e+12,
+   "type": "log"
+}
+[1737110598.012][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=13) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "expression": "1"
+}
+[1737110598.020][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "timestamp": 11607.551821
+}
+[1737110598.070][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=13) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1737110598.073][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "timestamp": 11607.611704
+}
+[1737110598.073][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "7422830917227925043.-7714597298698967518"
+}
+[1737110598.073][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "frameId": "F0D7B67E75B9783A73A61EB0E0894AEA"
+}
+[1737110598.076][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1737110598.077][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=15) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "expression": "1"
+}
+[1737110598.080][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=15) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1737110598.080][INFO]: Done waiting for pending navigations. Status: ok
+[1737110598.080][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE Navigate
+[1737110598.089][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "44387.20",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "timestamp": 1.737110598088074e+12,
+      "url": "http://127.0.0.1:9090/favicon.ico"
+   }
+}
+[1737110598.100][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND MaximizeWindow {
+   "windowHandle": "current"
+}
+[1737110598.100][INFO]: Waiting for pending navigations...
+[1737110598.100][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "expression": "1"
+}
+[1737110598.129][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+}
+[1737110598.133][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1737110598.133][INFO]: Done waiting for pending navigations. Status: ok
+[1737110598.133][DEBUG]: DevTools WebSocket Command: Browser.getWindowForTarget (id=17) (session_id=) browser {
+   "targetId": "F0D7B67E75B9783A73A61EB0E0894AEA"
+}
+[1737110598.133][DEBUG]: DevTools WebSocket Response: Browser.getWindowForTarget (id=17) (session_id=) browser {
+   "bounds": {
+      "height": 1028,
+      "left": 10,
+      "top": 42,
+      "width": 945,
+      "windowState": "normal"
+   },
+   "windowId": 504607784
+}
+[1737110598.133][DEBUG]: DevTools WebSocket Command: Browser.setWindowBounds (id=18) (session_id=) browser {
+   "bounds": {
+      "windowState": "maximized"
+   },
+   "windowId": 504607784
+}
+[1737110598.134][DEBUG]: DevTools WebSocket Response: Browser.setWindowBounds (id=18) (session_id=) browser {
+}
+[1737110598.144][DEBUG]: DevTools WebSocket Command: Browser.getWindowBounds (id=19) (session_id=) browser {
+   "windowId": 504607784
+}
+[1737110598.145][DEBUG]: DevTools WebSocket Response: Browser.getWindowBounds (id=19) (session_id=) browser {
+   "bounds": {
+      "height": 1028,
+      "left": 10,
+      "top": 42,
+      "width": 945,
+      "windowState": "maximized"
+   }
+}
+[1737110598.145][DEBUG]: DevTools WebSocket Command: Browser.getWindowBounds (id=20) (session_id=) browser {
+   "windowId": 504607784
+}
+[1737110598.145][DEBUG]: DevTools WebSocket Response: Browser.getWindowBounds (id=20) (session_id=) browser {
+   "bounds": {
+      "height": 1028,
+      "left": 10,
+      "top": 42,
+      "width": 945,
+      "windowState": "maximized"
+   }
+}
+[1737110598.145][DEBUG]: DevTools WebSocket Command: Browser.getWindowForTarget (id=21) (session_id=) browser {
+   "targetId": "F0D7B67E75B9783A73A61EB0E0894AEA"
+}
+[1737110598.146][DEBUG]: DevTools WebSocket Response: Browser.getWindowForTarget (id=21) (session_id=) browser {
+   "bounds": {
+      "height": 1028,
+      "left": 10,
+      "top": 42,
+      "width": 945,
+      "windowState": "maximized"
+   },
+   "windowId": 504607784
+}
+[1737110598.146][INFO]: Waiting for pending navigations...
+[1737110598.146][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "expression": "1"
+}
+[1737110598.147][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1737110598.147][INFO]: Done waiting for pending navigations. Status: ok
+[1737110598.147][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE MaximizeWindow {
+   "height": 1028,
+   "width": 945,
+   "x": 10,
+   "y": 42
+}
+[1737110598.153][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "var passedArgs = Array.prototype.slice.call(arguments,0); return (function () {\n        const element = document.evaluate(\n          '//*[@id=\"tarifs-pricing\"]/div/div[1]',\n          document,\n          null,\n          XPathResult.FIRST_ORDERED_NODE_TYPE,\n          null\n        ).singleNodeValue;\n\n\n        element.scrollIntoView({ behavior: 'auto' });\n\n      }).apply(window, passedArgs);"
+}
+[1737110598.153][INFO]: Waiting for pending navigations...
+[1737110598.153][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=23) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "expression": "1"
+}
+[1737110598.229][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+}
+[1737110598.229][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=23) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1737110598.229][INFO]: Done waiting for pending navigations. Status: ok
+[1737110598.229][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=24) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+}
+[1737110598.239][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=24) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "",
+         "gatedAPIFeatures": [  ],
+         "id": "F0D7B67E75B9783A73A61EB0E0894AEA",
+         "loaderId": "56E4CBC4F87A9264FAECCCE8B26AC13C",
+         "mimeType": "text/html",
+         "secureContextType": "SecureLocalhost",
+         "securityOrigin": "http://127.0.0.1:9090",
+         "url": "http://127.0.0.1:9090/pricing"
+      }
+   }
+}
+[1737110598.239][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=25) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+}
+[1737110598.241][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=25) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "",
+         "gatedAPIFeatures": [  ],
+         "id": "F0D7B67E75B9783A73A61EB0E0894AEA",
+         "loaderId": "56E4CBC4F87A9264FAECCCE8B26AC13C",
+         "mimeType": "text/html",
+         "secureContextType": "SecureLocalhost",
+         "securityOrigin": "http://127.0.0.1:9090",
+         "url": "http://127.0.0.1:9090/pricing"
+      }
+   }
+}
+[1737110598.242][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=26) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "7422830917227925043.-7714597298698967518"
+}
+[1737110598.252][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=26) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":null}"
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "-4957062407277573285.1.8",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1737110598.252][INFO]: Waiting for pending navigations...
+[1737110598.252][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=27) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "expression": "1"
+}
+[1737110598.255][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+}
+[1737110598.255][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=27) (session_id=763F4C929A1407075C1C1827626AC4D0) F0D7B67E75B9783A73A61EB0E0894AEA {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1737110598.255][INFO]: Done waiting for pending navigations. Status: ok
+[1737110598.255][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE ExecuteScript null
+[44325:44325:0117/114325.953169:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 1 times!
+[44284:44284:0117/114327.549032:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:5157
+[44284:44284:0117/114327.587134:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:265059
+[1737110607.637][DEBUG]: DevTools WebSocket Event: Target.detachedFromTarget (session_id=) browser {
+   "sessionId": "763F4C929A1407075C1C1827626AC4D0",
+   "targetId": "F0D7B67E75B9783A73A61EB0E0894AEA"
+}
+[44327:44338:0117/114327.700009:WARNING:sqlite_persistent_store_backend_base.cc(198)] Failed to post task from FlushAndNotifyInBackground@net/extras/sqlite/sqlite_persistent_store_backend_base.cc:248 to client_task_runner_.
+[44327:44338:0117/114327.700284:WARNING:sqlite_persistent_store_backend_base.cc(198)] Failed to post task from FlushAndNotifyInBackground@net/extras/sqlite/sqlite_persistent_store_backend_base.cc:248 to client_task_runner_.
+[1737110608.271][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110608.283][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110608.797][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110608.804][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110609.311][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110609.318][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110609.828][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110609.847][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110610.359][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110610.372][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110610.880][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110610.892][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110611.400][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110611.414][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110611.923][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110611.929][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110612.437][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110612.443][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110612.951][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110612.958][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110613.464][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110613.471][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110613.975][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110613.982][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110614.488][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110614.494][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110615.000][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110615.010][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110615.516][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110615.524][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110616.029][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110616.038][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110616.545][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110616.551][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110617.057][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110617.065][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110617.570][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110617.576][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110618.082][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110618.089][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110618.593][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND FindElements {
+   "using": "css selector",
+   "value": "//*[@id=\"tarifs-pricing\"]/div/div[1]/div/div/div[2]/a"
+}
+[1737110618.600][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+[1737110618.668][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] COMMAND Quit {
+}
+[1737110618.668][INFO]: [44e52e4ca71a868753fe2f50b61e95c7] RESPONSE Quit
+[1737110618.668][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1737110618.668][DEBUG]: Log type 'browser' lost 1 entries on destruction
