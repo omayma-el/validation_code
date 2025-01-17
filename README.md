@@ -323,3 +323,69 @@ Image for winter.
 - Case 2: Navigate to the geo page (`http://localhost:9090/geo`).  
 - Case 3: Verify the presence of the "Localisation" section and its title.  
 - Case 4: Verify that the map iframe is visible and functional.
+
+## Login page
+
+### Scenario 1: Should load the login page and check the form elements
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the login page (`http://localhost:9090/login`).  
+- Case 3: Wait for the page to load completely.  
+- Case 4: Verify that the login form is present.  
+- Case 5: Verify that the input fields for username (`name`) and password are present.  
+- Case 6: Verify that the submit button is present.  
+
+---
+
+### Scenario 2: Should submit the login form with valid credentials
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the login page (`http://localhost:9090/login`).  
+- Case 3: Enter valid credentials in the login form:  
+    - Username: `Soizic`  
+    - Password: `Vernet`  
+- Case 4: Click the submit button.  
+- Case 5: Verify that the page navigates to the `/admin` page.  
+
+---
+
+### Scenario 3: Should display an error message with invalid credentials
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the login page (`http://localhost:9090/login`).  
+- Case 3: Enter invalid credentials in the login form:  
+    - Username: `invalidUser`  
+    - Password: `invalidPassword`  
+- Case 4: Click the submit button.  
+- Case 5: Verify that the page remains on the `/login` page.  
+- Case 6: Verify that the username and password fields retain the entered invalid values.  
+
+---
+
+### Scenario 4: Should stay on the login page and show validation message when username is empty
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the login page (`http://localhost:9090/login`).  
+- Case 3: Enter a valid password in the login form:  
+    - Password: `Vernet`  
+- Case 4: Leave the username field empty.  
+- Case 5: Click the submit button.  
+- Case 6: Verify that the page remains on the `/login` page.  
+- Case 7: Verify that the password field retains the entered value.  
+- Case 8: Verify that the username field shows a validation message:  
+    - "Please fill out this field."  
+
+---
+
+### Scenario 5: Should stay on the login page and show validation message when password is empty
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the login page (`<loginUrl>`).  
+- Case 3: Enter a valid username in the login form:  
+    - Username: `Soizic`  
+- Case 4: Leave the password field empty.  
+- Case 5: Click the submit button.  
+- Case 6: Verify that the page remains on the `/login` page.  
+- Case 7: Verify that the username field retains the entered value.  
+- Case 8: Verify that the password field shows a validation message:  
+    - "Please fill out this field."  
