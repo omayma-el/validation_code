@@ -5,9 +5,9 @@
 
   <testsuite name="examples.princing.princing_test"
     errors="0" failures="0" hostname="" id="" package="princing" skipped="0"
-    tests="7" time="53.48" timestamp="">
+    tests="7" time="113.0" timestamp="">
   
-    <testcase name="should load the pricing page and check the header text" classname="examples.princing.princing_test" time="0.9210" assertions="6">
+    <testcase name="should load the pricing page and check the header text" classname="examples.princing.princing_test" time="1.012" assertions="6">
 
     
 
@@ -22,7 +22,7 @@
     
     </testcase>
   
-    <testcase name="should check the main content area" classname="examples.princing.princing_test" time="1.702" assertions="5">
+    <testcase name="should check the main content area" classname="examples.princing.princing_test" time="4.952" assertions="5">
 
     
 
@@ -35,7 +35,7 @@
     
     </testcase>
   
-    <testcase name="should verify pricing sections and text" classname="examples.princing.princing_test" time="1.538" assertions="5">
+    <testcase name="should verify pricing sections and text" classname="examples.princing.princing_test" time="4.670" assertions="5">
 
     
 
@@ -48,7 +48,7 @@
     
     </testcase>
   
-    <testcase name="should check the presence of pricing images" classname="examples.princing.princing_test" time="1.435" assertions="3">
+    <testcase name="should check the presence of pricing images" classname="examples.princing.princing_test" time="5.804" assertions="3">
 
     
 
@@ -57,7 +57,7 @@
     
     </testcase>
   
-    <testcase name="should check the presence of payment method images - Chrome" classname="examples.princing.princing_test" time="1.926" assertions="3">
+    <testcase name="should check the presence of payment method images - Chrome" classname="examples.princing.princing_test" time="5.217" assertions="3">
 
     
 
@@ -66,12 +66,12 @@
     
     </testcase>
   
-    <testcase name="should check that the contact button is functional - Chrome" classname="examples.princing.princing_test" time="1.673" assertions="1">
+    <testcase name="should check that the contact button is functional - Chrome" classname="examples.princing.princing_test" time="7.327" assertions="1">
 
     
     </testcase>
   
-    <testcase name="should check that the 3 contact buttons are functional - Chrome" classname="examples.princing.princing_test" time="17.54" assertions="3">
+    <testcase name="should check that the 3 contact buttons are functional - Chrome" classname="examples.princing.princing_test" time="27.49" assertions="3">
 
     
 

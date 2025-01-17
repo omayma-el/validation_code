@@ -16,17 +16,6 @@ describe('Admin Page Test', function() {
         .assert.urlContains('/admin');
     }
   
-    it('should load the admin page and check the main container', function(browser) {
-      login(browser);
-      browser
-        .navigateTo(adminUrl)
-        .useCss()
-        .waitForElementVisible('body', 10000)
-        .useXpath()
-        .assert.elementPresent('//main[contains(@class, "container mt-5")]')
-        .end();
-    });
-  
     it('should check the presence of the main content area', function(browser) {
       login(browser);
       browser

@@ -5,9 +5,9 @@
 
   <testsuite name="examples.login.login_test"
     errors="0" failures="0" hostname="" id="" package="login" skipped="0"
-    tests="5" time="20.39" timestamp="">
+    tests="5" time="50.05" timestamp="">
   
-    <testcase name="should load the login page and check the form elements" classname="examples.login.login_test" time="1.014" assertions="5">
+    <testcase name="should load the login page and check the form elements" classname="examples.login.login_test" time="0.9410" assertions="5">
 
     
 
@@ -20,23 +20,14 @@
     
     </testcase>
   
-    <testcase name="should submit the login form with valid credentials" classname="examples.login.login_test" time="2.220" assertions="2">
+    <testcase name="should submit the login form with valid credentials" classname="examples.login.login_test" time="5.443" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="should display an error message with invalid credentials" classname="examples.login.login_test" time="2.491" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="should stay on the login page and show validation message when username is empty" classname="examples.login.login_test" time="2.258" assertions="3">
+    <testcase name="should display an error message with invalid credentials" classname="examples.login.login_test" time="6.216" assertions="3">
 
     
 
@@ -45,7 +36,16 @@
     
     </testcase>
   
-    <testcase name="should stay on the login page and show validation message when password is empty" classname="examples.login.login_test" time="2.211" assertions="3">
+    <testcase name="should stay on the login page and show validation message when username is empty" classname="examples.login.login_test" time="6.849" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should stay on the login page and show validation message when password is empty" classname="examples.login.login_test" time="5.574" assertions="3">
 
     
 

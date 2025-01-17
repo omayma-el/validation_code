@@ -5,9 +5,9 @@
 
   <testsuite name="examples.basic.navigateur"
     errors="0" failures="0" hostname="" id="" package="basic" skipped="0"
-    tests="6" time="18.90" timestamp="">
+    tests="6" time="103.6" timestamp="">
   
-    <testcase name="should load the home page and check the header text" classname="examples.basic.navigateur" time="1.026" assertions="5">
+    <testcase name="should load the home page and check the header text" classname="examples.basic.navigateur" time="2.382" assertions="5">
 
     
 
@@ -20,40 +20,7 @@
     
     </testcase>
   
-    <testcase name="should check the apartment gallery" classname="examples.basic.navigateur" time="1.505" assertions="8">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="should check the characteristics section" classname="examples.basic.navigateur" time="1.634" assertions="15">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    <testcase name="should check the apartment gallery" classname="examples.basic.navigateur" time="3.692" assertions="8">
 
     
 
@@ -72,7 +39,17 @@
     
     </testcase>
   
-    <testcase name="should check the prices section" classname="examples.basic.navigateur" time="1.206" assertions="10">
+    <testcase name="should check the characteristics section" classname="examples.basic.navigateur" time="5.116" assertions="15">
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -95,14 +72,37 @@
     
     </testcase>
   
-    <testcase name="should check the presence of the contact button and its functionality" classname="examples.basic.navigateur" time="1.240" assertions="2">
+    <testcase name="should check the prices section" classname="examples.basic.navigateur" time="6.003" assertions="10">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
     
     </testcase>
   
-    <testcase name="should check the presence and functionality of all buttons" classname="examples.basic.navigateur" time="2.836" assertions="9">
+    <testcase name="should check the presence of the contact button and its functionality" classname="examples.basic.navigateur" time="8.973" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should check the presence and functionality of all buttons" classname="examples.basic.navigateur" time="25.62" assertions="9">
 
     
 

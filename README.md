@@ -1,34 +1,25 @@
-# Hello World
+# Test Description
 
-## Installation
+## Admin page
 
-Use the package manager [npm](https://www.npmjs.com/) to install helloworld.
+### Scenario 1 : Should check the presence of the main content area
 
-Use node v16 use :
-```bash
-nvm install 16
-```
+- Case 1: Log in to the application using valid credentials.
+- Case 2: Navigate to the admin page.
+- Case 3: Verify that the main container on the admin page is present.
 
-```bash
-npm i
-```
+### Scenario 2 : Should check the presence of the admin panel elements
 
-## Usage
+- Case 1: Log in to the application using valid credentials.
+- Case 2: Navigate to the admin page.
+- Case 3: Verify the presence of key elements in the admin panel
 
-Start the application dev with :
+### Scenario 3 : Should check the functionality of the "Disconnect" button
 
-```bash
-npm run start
-```
+- Case 1: Log in to the application using valid credentials.
+- Case 2: Navigate to the admin page.
+- Case 3: Click the "Disconnect" button.
+- Case 4: Wait for the application to redirect.
+- Case 5: Verify that the URL changes to /login.
 
-Created the dist with :
-
-```bash
-npm run dist
-```
-
-Analyse the coding rules with :
-
-```bash
-npm run lint
-```
+## Index page

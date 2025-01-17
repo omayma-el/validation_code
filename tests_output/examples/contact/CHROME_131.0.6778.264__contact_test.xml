@@ -5,9 +5,9 @@
 
   <testsuite name="examples.contact.contact_test"
     errors="0" failures="0" hostname="" id="" package="contact" skipped="0"
-    tests="4" time="37.22" timestamp="">
+    tests="4" time="67.54" timestamp="">
   
-    <testcase name="should load the contact page and check the header text - Chrome" classname="examples.contact.contact_test" time="1.236" assertions="10">
+    <testcase name="should load the contact page and check the header text - Chrome" classname="examples.contact.contact_test" time="0.9550" assertions="10">
 
     
 
@@ -30,7 +30,7 @@
     
     </testcase>
   
-    <testcase name="should fill out the contact form and submit - Chrome" classname="examples.contact.contact_test" time="6.258" assertions="8">
+    <testcase name="should fill out the contact form and submit - Chrome" classname="examples.contact.contact_test" time="13.28" assertions="8">
 
     
 
@@ -49,14 +49,14 @@
     
     </testcase>
   
-    <testcase name="should display error message when required fields are empty - Chrome" classname="examples.contact.contact_test" time="4.934" assertions="2">
+    <testcase name="should display error message when required fields are empty - Chrome" classname="examples.contact.contact_test" time="9.926" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="should display validation message for invalid email - Chrome" classname="examples.contact.contact_test" time="6.179" assertions="2">
+    <testcase name="should display validation message for invalid email - Chrome" classname="examples.contact.contact_test" time="9.605" assertions="2">
 
     
 
