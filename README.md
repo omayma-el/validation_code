@@ -57,18 +57,18 @@
 - Case 3: Wait for the page to load completely.  
 - Case 4: Verify the section title "Caractéristiques".  
 - Case 5: Verify the following characteristics are displayed:  
-Plage à 30m  
-Parking gratuit  
-Restaurants  
-Commerces  
-Salon de jardin  
-Baignoire  
-Micro-ondes  
-Cafetière  
-Pas d'animaux  
-Pas de TV  
-Pas de WIFI  
-Non fumeur  
+    - Plage à 30m  
+    - Parking gratuit  
+    - Restaurants  
+    - Commerces  
+    - Salon de jardin  
+    - Baignoire  
+    - Micro-ondes  
+    - Cafetière  
+    - Pas d'animaux  
+    - Pas de TV  
+    - Pas de WIFI  
+    - Non fumeur  
 
 ---
 
@@ -81,9 +81,9 @@ Non fumeur
 - Case 5: Verify that the pricing images are visible:  
 Image for winter.  
 - Case 6: Verify the pricing tiers are displayed with corresponding details:  
-Basse saison: 460 € / semaine.  
-Moyenne saison: 560 € / semaine.  
-Haute saison: 760 € / semaine.  
+    - Basse saison: 460 € / semaine.  
+    - Moyenne saison: 560 € / semaine.  
+    - Haute saison: 760 € / semaine.  
 - Case 7: Verify the presence of the "Contact" button.  
 
 ---
@@ -123,11 +123,11 @@ Haute saison: 760 € / semaine.
 - Case 6: Verify that the subtitle contains the text "remplissez le formulaire".  
 - Case 7: Verify that the form is visible.  
 - Case 8: Verify that the following form fields are visible:  
-  First Name  
-  Last Name  
-  Mobile Phone  
-  Arrival Date  
-  Departure Date  
+    - First Name  
+    - Last Name  
+    - Mobile Phone  
+    - Arrival Date  
+    - Departure Date  
 
 ---
 
@@ -170,16 +170,16 @@ Haute saison: 760 € / semaine.
 - Case 2: Navigate to the contact page (`http://localhost:9090/contact`).  
 - Case 3: Wait for the page to load completely.  
 - Case 4: Fill out the form with the following details:  
-  - First Name: Jacques  
-  - Last Name: Brel  
-  - Email: invalid-email  
-  - Mobile Phone: 0610203040  
-  - Arrival Date: 12-01-2023  
-  - Departure Date: 12-10-2023  
-  - Message: "This is a test message."  
+    - First Name: Jacques  
+    - Last Name: Brel  
+    - Email: invalid-email  
+    - Mobile Phone: 0610203040  
+    - Arrival Date: 12-01-2023  
+    - Departure Date: 12-10-2023  
+    - Message: "This is a test message."  
 - Case 5: Scroll to the submit button and click it.  
 - Case 6: Verify that the error message for the `Email` field is displayed:  
-  "Please include an '@' in the email address. 'invalid-email' is missing an '@'."  
+    - "Please include an '@' in the email address. 'invalid-email' is missing an '@'."  
 
 ---
 
@@ -193,8 +193,8 @@ Haute saison: 760 € / semaine.
 - Case 4: Verify that the header container is visible.  
 - Case 5: Verify that the feedback form is visible.  
 - Case 6: Verify that the following form fields are visible:  
-  - Name  
-  - Message  
+    - Name  
+    - Message  
 - Case 7: Verify that the submit button is visible.  
 
 ---
@@ -205,8 +205,8 @@ Haute saison: 760 € / semaine.
 - Case 2: Navigate to the feedback page (`http://localhost:9090/feedback`).  
 - Case 3: Wait for the page to load completely.  
 - Case 4: Fill out the form with the following details:  
-  - Name: Pierre  
-  - Message: "This is a feedback message."  
+    - Name: Pierre  
+    - Message: "This is a feedback message."  
 - Case 5: Scroll to the submit button and click it.  
 - Case 6: Verify the page URL contains `/feedback`.  
 - Case 7: Verify that the form fields are cleared after submission.  
@@ -222,3 +222,104 @@ Haute saison: 760 € / semaine.
 - Case 4: Scroll to the submit button and click it without filling in the required fields.  
 - Case 5: Verify that an error message is displayed for the `Name` field:  
   "Please fill out this field."
+
+## Geo page
+
+### Scenario 1: Should load the geo page and check the header text
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the geo page (`http://localhost:9090/geo`).  
+- Case 3: Wait for the page to load completely.  
+- Case 4: Verify that the header text "IDEALEMENT SITUE" is visible.  
+- Case 5: Verify that the subtitle "30 mètres de la plage" is visible.  
+- Case 6: Verify that the "Contactez-nous" button is visible.  
+
+---
+
+### Scenario 2: Should check the main content area
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the geo page (`http://localhost:9090/geo`).  
+- Case 3: Wait for the page to load completely.  
+- Case 4: Verify the visibility of the main content container.  
+- Case 5: Verify that the "Accès" card is visible.  
+- Case 6: Verify that the "Carte" section is visible.  
+
+---
+
+### Scenario 3: Should check the presence of the contact button and its functionality
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the geo page (`http://localhost:9090/geo`).  
+- Case 3: Scroll to the "Contactez-nous" button and click it.  
+- Case 4: Verify that the URL contains `/contact`.  
+
+---
+
+### Scenario 4: Should check the presence of the "Voiture" section and its content
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the geo page (`http://localhost:9090/geo`).  
+- Case 3: Verify the presence of the "Voiture" section and its title.  
+- Case 4: Verify that the details for "Paris" and "Toulouse" are correct:  
+    - Paris: "Rosas", "Autoroute jusqu'à Figueras.", "900 km.", "Temps de trajet : 8 heures."  
+    - Toulouse: "Rosas", "Autoroute jusqu'à Figueras.", "290 km.", "Temps de trajet : 2h30."  
+
+---
+
+### Scenario 5: Should check the presence of the "Avion" section and its content
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the geo page (`http://localhost:9090/geo`).  
+- Case 3: Verify the presence of the "Avion" section and its title.  
+- Case 4: Verify that the details for "Paris" to "Barcelone" are correct:  
+    - "Location de voiture directement à l'aéroport, car jusqu'à Rosas.",  
+    - "Puis de l'aéroport à Rosas : 1h30.",  
+    - "Temps de trajet : 1h15."  
+
+---
+
+### Scenario 6: Should check the presence of the "Train" section and its content
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the geo page (`http://localhost:9090/geo`).  
+- Case 3: Verify the presence of the "Train" section and its title.  
+- Case 4: Verify that the details for "Paris" to "Barcelone" and the train information are correct:  
+    - "Puis de la gare de Barcelone à Rosas : location de voiture directement à la gare ou train jusqu'à Figueras."  
+    - "Temps de trajet : 6h30."  
+
+---
+
+### Scenario 7: Should check the presence of the "Nos meilleures adresses" section and its content
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the geo page (`http://localhost:9090/geo`).  
+- Case 3: Verify the presence of the "Nos meilleures adresses" section.  
+- Case 4: Verify that the restaurant names and their details are correct:  
+    - "Restaurant Rosa"  
+    - "Jamoneria Jamon 100 %"  
+    - "Sidreria Toxt's"  
+    - "Restaurant Las Palmeras"  
+    - "A emporter : El rey del pollo"  
+    - "Restaurant Pica Pica"  
+
+---
+
+### Scenario 8: Should check the presence of the "A proximité" section and its content
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the geo page (`http://localhost:9090/geo`).  
+- Case 3: Verify the presence of the "A proximité" section and its title.  
+- Case 4: Verify the details for the "A proximité" section:  
+    - "Situé sur la promenade qui longe la mer, l'appartement offre un accès direct à la plage."  
+    - "Parc naturel Cap de Creuz."  
+    - "Villages typiques de la Costa Brava : Cadaques (Village de Dali), Figueras, Pals, Calella de Pallafrugell, Escala, Paratallada, Peralada..."  
+
+---
+
+### Scenario 9: Should check the presence of the map and its functionality
+
+- Case 1: Maximize the browser window.  
+- Case 2: Navigate to the geo page (`http://localhost:9090/geo`).  
+- Case 3: Verify the presence of the "Localisation" section and its title.  
+- Case 4: Verify that the map iframe is visible and functional.
