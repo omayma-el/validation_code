@@ -9,4 +9,4 @@ module.exports = {
     port: 3000,
     mongodb: 'mongodb+srv://omayma:toto@cluster0.ipkrn.mongodb.net/'
   }
-};
+}

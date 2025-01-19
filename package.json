@@ -4,7 +4,6 @@
   "description": "Chat Bot IO v2",
   "main": "index.js",
   "scripts": {
-    "test-api": "npx jest ./test-api --forceExit --detectOpenHandles",
     "start": "npx webpack-dev-server --mode development",
     "api-start": "node ./api/index.js",
     "dist": "npx webpack --mode production --progress=profile",
