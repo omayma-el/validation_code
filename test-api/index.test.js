@@ -68,11 +68,23 @@ function runLoadTest(done) {
       }
     }
   );
+  setTimeout(() => {
+    console.log('Test logic complete.');
+    callback(); // Notifie Jest que le test est terminé
+  }, 10 * 60 * 1000); // 10 minutes
 }
 
 describe('Performance Test', () => {
   it('should handle 1000 users for 10 minutes', (done) => {
-    console.log('Starting performance test...');
-    runLoadTest(done);
-  }, 11 * 60 * 1000);
+    const startTime = Date.now();
+    const logInterval = setInterval(() => {
+      console.log(`Time elapsed: ${(Date.now() - startTime) / 1000}s`);
+    }, 1000);
+
+    runLoadTest(() => {
+      clearInterval(logInterval); // Nettoyer l'intervalle pour éviter un handle ouvert
+      console.log('Performance test completed.');
+      done();
+    });
+  });
 });
