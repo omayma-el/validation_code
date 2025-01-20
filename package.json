@@ -8,7 +8,7 @@
     "api-start": "node ./api/index.js",
     "dist": "npx webpack --mode production --progress=profile",
     "lint": "eslint .",
-    "performance-test": "jest ./test-api/contact.test.js --forceExit --detectOpenHandles"
+    "performance-test": "npx jest ./test-api/ --forceExit --detectOpenHandles"
   },
   "repository": {
     "type": "git",

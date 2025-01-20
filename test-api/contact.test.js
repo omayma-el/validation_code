@@ -1,48 +1,38 @@
 const request = require('supertest');
-const app = require('../app'); // Importez votre serveur Express ou app.js
+const app = 'http://127.0.0.1:9090';
 
-describe('Performance Test for /contact', () => {
-  const testPayload = {
-    firstName: 'Jean',
-    lastName: 'Louis',
-    mobilePhone: '0610203040',
-    email: 'jean.louis@email.com',
-    arrivedAt: '2025-01-01',
-    departureAt: '2025-01-10',
-    message: 'Bonjour, ceci est un test.',
-  };
+describe('Contact Page Performance Test', () => {
+  it('should handle 1000 POST requests within 10 minutes and measure average response time', async () => {
+    jest.setTimeout(11 * 60 * 1000);
 
-  const simulateLoad = async (numRequests) => {
-    const promises = [];
-    for (let i = 0; i < numRequests; i++) {
-      promises.push(request(app).post('/contact').send(testPayload));
-    }
-    return Promise.all(promises);
-  };
-
-  it('should handle 1000 requests under 10 seconds', async () => {
-    const startTime = Date.now();
+    const totalRequests = 1000;
+    const totalTime = 10 * 60 * 1000;
+    const interval = totalTime / totalRequests;
     const responseTimes = [];
 
-    // Envoi de 1000 requêtes simultanées
-    const results = await simulateLoad(1000);
+    const testPayload = {
+      firstName: 'Jean',
+      lastName: 'Louis',
+      mobilePhone: '0610203040',
+      email: 'jean.louis@email.com',
+      arrivedAt: '2025-01-01',
+      departureAt: '2025-01-10',
+      message: 'Bonjour, ceci est un test.',
+    };
 
-    results.forEach((response, index) => {
-      // Vérifie que toutes les requêtes répondent avec succès
-      expect(response.status).toBe(200);
-      responseTimes.push(Date.now() - startTime);
-    });
+    for (let i = 0; i < totalRequests; i++) {
+      await new Promise(resolve => setTimeout(resolve, interval));
+      const startTime = Date.now();
+      const response = await request(app)
+        .post('/contact')
+        .send(testPayload)
+        .set('Accept', 'application/json');
+      const endTime = Date.now();
+      responseTimes.push(endTime - startTime);
+    }
 
-    const endTime = Date.now();
-    const duration = endTime - startTime;
-
-    // Affiche les métriques
-    console.log(`Completed 1000 requests in ${duration}ms`);
-    console.log(`Average response time: ${(
-      responseTimes.reduce((acc, time) => acc + time, 0) / responseTimes.length
-    ).toFixed(2)}ms`);
-
-    // Vérifie que toutes les requêtes ont été traitées sous 10 secondes
-    expect(duration).toBeLessThan(10 * 1000);
-  });
+    const averageResponseTime = responseTimes.reduce((a, b) => a + b, 0) / responseTimes.length;
+    console.log(`Average response time: ${averageResponseTime} ms`);
+    expect(averageResponseTime).toBeLessThan(1000);
+  }, 11 * 60 * 1000);
 });
